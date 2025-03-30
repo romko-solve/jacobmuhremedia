@@ -1,0 +1,482 @@
+doctype html
+html(lang="ru")
+	head
+		// Meta 
+		meta(charset='utf-8')
+		//- base(href="/")
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+		
+		// Title 
+		title Main Page
+
+		// SEO Meta 
+		meta(name='description' content='')
+		meta(name='keywords' content='')
+
+		// Favicon 
+		meta(property="og:image" content="img/preview.jpg")
+		link(rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon")
+		link(rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png")
+		link(rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png")
+		link(rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png")
+
+		// CSS 
+		include ./includes/_css.pug
+	body
+		// Preloader 
+		#preloader
+			.cssload-whirlpool
+
+		// Header 
+		header.header#header
+			// Navigation 
+			nav.navigation
+				.container
+					.row
+						.col.d-flex.align-items-center
+							.navigation--logo
+								a(href="#")
+									img(src="img/logo.png", alt="alt")
+
+							.navigation--menu-toggle
+								.one
+								.two
+								.three
+
+							.navigation--menu
+								ul
+									li
+										a(href="#portfolio") Портфолио
+									li
+										a(href="#services") Услуги и цены
+									li
+										a(href="#partners") Партнеры
+									li
+										a(href="#equipment") Оборудование
+									li
+										a(href="#contacts") Контакты
+						.col-auto
+							.navigation--phone
+								a.phone-button(href="tel:+79772828053") +7 977 282 80 53
+
+			.container
+				.row
+					.col
+						.header--descr
+							.header--location
+								select
+									option Москва и МО
+									option Краснодар
+							h1 Фото и видео аэросъёмка
+							p Разработаем сценарий полёта для вас бесплатно
+						.header--buttons
+							a.button.call-popup(href="#call-popup" data-subject="Разработать дизайн") Разработать сценарий
+							a.button-bordered(href="https://www.youtube.com/channel/UCBsposwK638zhx-gH0zi2Mw" target="_blank") Смотреть портфолио
+
+		// Portfolio 
+		section.portfolio#portfolio
+			.container
+				.row
+					.col
+						.section-title
+							h2 Портфолио
+				.row
+					.col
+						// Nav tabs
+						ul.nav.nav-tabs(role='tablist')
+							li.nav-item
+								a.nav-link.active(data-toggle='tab', href='#tab-1', role='tab', aria-controls='tab-1', aria-selected='true') Свадьбы
+							li.nav-item
+								a.nav-link(data-toggle='tab', href='#tab-2', role='tab', aria-controls='tab-2', aria-selected='false') Строящиеся объекты
+							li.nav-item
+								a.nav-link(data-toggle='tab', href='#tab-3', role='tab', aria-controls='tab-3', aria-selected='false') Загородная недвижимость
+							li.nav-item
+								a.nav-link(data-toggle='tab', href='#tab-4', role='tab', aria-controls='tab-4', aria-selected='false') Мероприятия
+
+						// Tab panes
+						.tab-content
+							#tab-1.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='tab-1-tab')
+								.row
+									.col-md-4
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-3.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+									.col-md-4
+										.portfolio--image.portfolio--image__small
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-2.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image.portfolio--image__small
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-2.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+									.col-md-4
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-3.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+							
+							#tab-2.tab-pane.fade(role='tabpanel', aria-labelledby='tab-2-tab')
+								.row
+									.col-md-4
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-3.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+									.col-md-4
+										.portfolio--image.portfolio--image__small
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-2.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image.portfolio--image__small
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-2.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+									.col-md-4
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-3.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+							#tab-3.tab-pane.fade(role='tabpanel', aria-labelledby='tab-3-tab')
+								.row
+									.col-md-4
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+									.col-md-4
+										.portfolio--image.portfolio--image__small
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-2.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image.portfolio--image__small
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-2.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+									.col-md-4
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+							#tab-4.tab-pane.fade(role='tabpanel', aria-labelledby='tab-4-tab')
+								.row
+									.col-md-4
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+									.col-md-4
+										.portfolio--image.portfolio--image__small
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-2.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image.portfolio--image__small
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-2.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+									.col-md-4
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+										.portfolio--image
+											a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+												img(src="img/portfolio-img-1.jpg", alt="alt")
+												.hover-text
+													span Смотреть еще
+
+		// Services 
+		section.services#services
+			.container
+				.row
+					.col
+						.section-title
+							h2 Услуги и цены
+				.row
+					.col-md-4
+						.services--item
+							.descr
+								.title
+									p Аэросъемка
+									h4 DJI Inspire 1
+								ul.list
+									li Возможно потребуется 
+										span место для подзарядки
+									li 2 заряженных 
+										span аккумулятора
+									li Съемка пилотом 
+										span и оператором
+							.price
+								.price--inner
+									.price--item 8 000 
+										span.rouble ь 
+										span.per / 1 час
+									.price--item.item-2 25 000 
+										span.rouble ь 
+										span.per / 8 часов
+								a.button.services--button.call-popup(href="#call-popup" data-subject="Аэросъемка - DJI Inspire 1") Заказать
+				
+					.col-md-4
+						.services--item
+							.descr
+								.title
+									p Аэросъемка
+									h4 DJI Phantom 4/4 pro
+								ul.list
+									li Съемка пилотом 
+										span и оператором
+									li 2 заряженных 
+										span аккумулятора
+									li 20 минут материла
+									li Возможно потребуется 
+										span место для подзарядки
+							.price
+								.price--inner
+									.price--item 5 000 
+										span.rouble ь 
+										span.per / 1 час
+									.price--item.item-2 20 000 
+										span.rouble ь 
+										span.per / 8 часов
+								a.button.services--button.call-popup(href="#call-popup" data-subject="Аэросъемка - DJI Phantom 4/4 pro") Заказать
+
+					.col-md-4
+						.services--item
+							.descr
+								.title
+									p Съемка
+									h4 Свадьбы
+								ul.list
+									li Съёмка всех этапов: 
+										span LoveStory, ЗАГС
+									li Съемка пилотом 
+										span и оператором
+									li 2 заряженных 
+										span аккумулятора
+									li Требуется место 
+										span для подзарядки
+							.price
+								.price--inner
+									.price--item 5 000 
+										span.rouble ь 
+										span.per / 1 час
+									.price--item.item-2 15 000 
+										span.rouble ь 
+										span.per / весь день
+								a.button.services--button.call-popup(href="#call-popup" data-subject="Съемка - Свадьбы") Заказать
+		
+		// Partners 
+		section.partners#partners
+			.container
+				.row
+					.col
+						.section-title
+							h2 Партнеры
+				.row
+					.col-md-12.d-flex.align-items-end.justify-content-center
+						.partners--logo
+							img(src="img/partners-logo-1.jpg", alt="alt")
+						.partners--logo
+							img(src="img/partners-logo-2.jpg", alt="alt")
+				.row
+					.col
+						.partners--descr
+							p Если вы хотите открыть студию по аэросъемке в своём городе - мы готовы предоставить все промо-материалы для съемок, провести обучение полетами, полностью рассказать как работать на всех этапах. 
+		
+		// Equipment 
+		section.equipment#equipment
+			.container
+				.row
+					.col
+						.section-title
+							h2 Оборудование
+
+				.equipment--item
+					.row
+						.col-md-5
+							.image
+								img(src="img/equipment-img-1.jpg", alt="alt")
+						.col-md-7.d-flex.align-items-center
+							.descr
+								h3 DJI Phantom 4
+								p Квадрокоптер для профессиональной аэросъемки с камерой 4к
+								p Объектив 20 mm; видео FHD fps 120, 4K fps 50
+
+				.equipment--item
+					.row
+						.col-md-5
+							.image
+								img(src="img/equipment-img-2.jpg", alt="alt")
+						.col-md-7.d-flex.align-items-center
+							.descr
+								h3 DJI Inspire X5
+								p Квадрокотер для профессиональной аэросъемки с камерой 4к
+								p Объектив 12,25,45 mm (crop x2); видео FHD fps 120; 4K fps 50
+		
+		// Contacts 
+		section.contacts#contacts
+			.container
+				.row
+					.col
+						.section-title
+							h2 Контакты
+				.row
+					.col-md-6
+						.contacts--form
+							h3 Заказать съёмку / задать вопрос
+							form.form
+								.form-group
+									input.form-control(type="text" name="name" placeholder="имя" required)
+								.form-group
+									input.form-control.phone-mask(type="text" name="phone" placeholder="телефон" required)
+								.form-group
+									input.form-control(type="text" name="message" placeholder="сообщение" required)
+								button.button-blue Отправить
+								input(type="hidden" name="subject" value="Заказать съёмку / задать вопрос")
+					.col-md-6
+						.contacts--image
+							img(src="img/contacts-img.png", alt="alt")
+		
+		// Footer 
+		footer.footer
+			.container
+				.row
+					.col-md-6.d-md-flex.align-items-md-start
+						.footer--logo
+							a(href="#")
+								img(src="img/logo.png", alt="alt")
+						.footer--copyright
+							p © Design by 
+								span Vladislav Logachev
+					.col-md-6.d-md-flex.justify-content-md-end.align-items-md-center
+						.footer--contacts
+							ul
+								li
+									a(href="tel:+79772828053") +7 977 282 80 53
+								li
+									a(href="mailto:info@flighthigh.ru") info@flighthigh.ru
+						.footer--social
+							ul
+								li
+									a(href="https://www.youtube.com/channel/UCBsposwK638zhx-gH0zi2Mw" target="_blank")
+										img(src="img/social-1.png", alt="alt")
+								li
+									a(href="https://www.instagram.com/flighthigh_ru/" target="_blank")
+										img(src="img/social-3.png", alt="alt")
+								li
+									a(href="https://vk.com/flighthigh_ru" target="_blank")
+										img(src="img/social-4.png", alt="alt")
+		
+		// Popup 
+		.hidden
+			#call-popup.popup
+				button.popup--close(type='button')
+				.popup--inner
+					.popup--title
+						h3 Оставьте номер 
+							span вашего телефона
+					
+					.popup--descr
+						p Мы свяжемся с вами в течение пяти минут и обсудим ваш будущий сценарий
+					form.form.form__popup
+						.form-group
+							input.form-control(type="text" name="name" placeholder="имя" required)
+						.form-group
+							input.form-control.phone-mask(type="text" name="phone" placeholder="телефон" required)
+						.form-group
+							input.form-control(type="text" name="message" placeholder="сообщение" required)
+						.form-group.button-group
+							button.button-bordered.button-bordered__blue Подать заявку
+						input(type="hidden" name="subject" value="")
+
+			#success-popup.popup
+				button.popup--close(type='button')
+				.popup--inner
+					.popup--title
+						h3 Оставьте номер 
+							span вашего телефона
+					
+					.popup--descr.popup--descr__center
+						p Спасибо!
+						p Наши сотрудники свяжутся
+							span с вами в ближайшее время.
+		
+		// Arrow Top 
+		a.back-to-top(href="#header") ▴
+
+
+		// JS 
+		include ./includes/_js.pug
